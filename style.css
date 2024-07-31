@@ -1,80 +1,85 @@
-body{
+{
     margin: 0;
     padding: 0;
-    background: url(https://wallpaperaccess.com/full/1193174.jpg) no-repeat center center fixed;
+    box-sizing: border-box;
 }
 
-.divForm{
-    background: #2b2b2b;
-    height: 400px;
-    width: 400px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border-radius: 5px;
-    transform: translate(-50%,-50%);
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Definindo uma fonte genérica */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    background-color: #f0f0f0; /* Cor de fundo geral */
+    margin: 0;
+    padding: 0;
 }
 
-img{
-    height: 60px;
-    z-index: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: -200px;
+/* Estilos para o cabeçalho */
+header {
+    background-color: #333; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto do cabeçalho */
+    text-align: center;
+    padding: 20px 0; /* Preenchimento interno do cabeçalho */
 }
 
-.login{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 10px;
+/* Estilos para o título principal */
+header h1 {
+    font-size: 2em; /* Tamanho da fonte do título */
 }
 
-.input{
-    padding: 4px;
-    width: 300px;
-    outline: 0;
-    background: #161616;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-weight: 100;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    transition: 0.5s;
+/* Estilos para a navegação */
+nav {
+    background-color: #666; /* Cor de fundo da navegação */
+    text-align: center;
+    padding: 10px 0; /* Preenchimento interno da navegação */
 }
 
-.input:hover{
-    border: solid 1px white;
+nav ul {
+    list-style-type: none; /* Removendo os marcadores da lista */
 }
 
-.input:focus{
-    border: solid 1px white;
+nav ul li {
+    display: inline; /* Exibindo os itens da lista em linha */
+    margin: 0 10px; /* Margem entre os itens da lista */
 }
 
-p{
-    color: white;
-    font-weight: bold;
-    font-size: 10px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+nav ul li a {
+    text-decoration: none; /* Removendo o sublinhado dos links */
+    color: #fff; /* Cor do texto dos links */
+    padding: 5px 10px; /* Preenchimento interno dos links */
 }
 
-label{
-    color: white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 300;
+nav ul li a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse sobre os links */
 }
 
-.btn{
-   width: 300px;
-   padding: 10px;
-   outline: 0;
-   font-family: 'MinecraftiaRegular';
-   font-weight: bold;
-   font-style: normal;
-   color: white;
-   background-color: #168b4c;
-   border: solid 2px black
+/* Estilos para as seções principais */
+main {
+    padding: 20px; /* Preenchimento interno do conteúdo principal */
+}
+
+section {
+    background-color: #fff; /* Cor de fundo das seções */
+    margin-bottom: 20px; /* Margem inferior entre as seções */
+    padding: 20px; /* Preenchimento interno das seções */
+    border-radius: 5px; /* Borda arredondada das seções */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave nas seções */
+}
+
+section h2 {
+    color: #333; /* Cor do texto dos títulos das seções */
+}
+
+section p {
+    color: #666; /* Cor do texto do conteúdo das seções */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto do rodapé */
+    text-align: center;
+    padding: 10px 0; /* Preenchimento interno do rodapé */
+    position: absolute; /* Posicionamento absoluto no rodapé */
+    bottom: 0; /* Colocando no final da página */
+    width: 100%; /* Largura total do rodapé */
 }
